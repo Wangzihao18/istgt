@@ -58,7 +58,12 @@
 #endif
 
 #ifdef __linux__
+#ifdef __x86_64__
 #include <x86_64-linux-gnu/sys/queue.h>
+#endif
+#ifdef __aarch64__
+#include <aarch64-linux-gnu/sys/queue.h>
+#endif
 #endif
 #include <stdbool.h>
 #ifdef __FreeBSD__
